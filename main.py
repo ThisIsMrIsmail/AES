@@ -14,7 +14,7 @@ class AES_GUI:
     
     def home_window(self):
         self.frame = tk.Frame(self.root)
-        self.frame.pack(pady=20)
+        self.frame.pack(pady=40)
         
         self.encrypt_button = tk.Button(self.frame, text="Encrypt", command=self.encryption_window)
         self.encrypt_button.grid(row=0, column=0, padx=10)
