@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
+import pyperclip
 import os
 
 class AES_GUI:
@@ -81,6 +82,7 @@ class AES_GUI:
             with open(encrypted_filename, "wb") as file:
                 [file.write(x) for x in (aes.nonce, tag, ciphertext)]
             
+            pyperclip.copy(key.hex())
             messagebox.showinfo("Encryption Successful", f"File encrypted successfully!\nEncryption Key: {key.hex()}")
         except Exception as e:
             messagebox.showerror("Encryption Error", f"An error occurred during encryption:\n{str(e)}")
