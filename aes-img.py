@@ -2,6 +2,7 @@ import numpy as np
 import secrets
 from PIL import Image
 import os
+from tkinter import filedialog
 
 # AES S-box
 sbox = np.array([
@@ -151,9 +152,10 @@ def gf_mul(x, y):
     return r
 
 def main():
-    choice = input("Enter 'encrypt' to encrypt or 'decrypt' to decrypt: ").strip().lower()
-    if choice == 'encrypt':
-        filepath = input("Enter the path to the image to encrypt: ").strip()
+    choice = int(input("Enter '0' to encrypt or '1' to decrypt: ").strip().lower())
+
+    if choice == 0:
+        filepath = filedialog.askopenfilename()
         if not os.path.exists(filepath):
             print("File not found.")
             return
@@ -177,10 +179,10 @@ def main():
         with open(encrypted_filepath, 'wb') as f:
             f.write(encrypted_data)
 
-        print(f"Encrypted image saved to {encrypted_filepath}")
+        print(f"Encrypted file saved to {encrypted_filepath}")
 
-    elif choice == 'decrypt':
-        filepath = input("Enter the path to the encrypted image: ").strip()
+    elif choice == 1:
+        filepath = filedialog.askopenfilename()
         if not os.path.exists(filepath):
             print("File not found.")
             return
@@ -201,7 +203,7 @@ def main():
         with open(decrypted_filepath, 'wb') as f:
             f.write(decrypted_data.rstrip(b'\0'))
 
-        print(f"Decrypted image saved to {decrypted_filepath}")
+        print(f"Decrypted file saved to {decrypted_filepath}")
 
     else:
         print("Invalid choice. Please enter 'encrypt' or 'decrypt'.")
