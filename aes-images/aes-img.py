@@ -173,7 +173,7 @@ def main():
             encrypted_block = encrypt_block(block, key)
             encrypted_data.extend(encrypted_block)
 
-        encrypted_filepath = filepath + ".enc"
+        encrypted_filepath = filepath
         with open(encrypted_filepath, 'wb') as f:
             f.write(encrypted_data)
 
@@ -197,7 +197,7 @@ def main():
             decrypted_block = decrypt_block(block, key)
             decrypted_data.extend(decrypted_block)
 
-        decrypted_filepath = filepath + ".dec"
+        decrypted_filepath = filepath
         with open(decrypted_filepath, 'wb') as f:
             f.write(decrypted_data.rstrip(b'\0'))
 

@@ -109,7 +109,7 @@ class AES_GUI:
                 plaintext = file.read()
             
             ciphertext, tag = aes.encrypt_and_digest(plaintext)
-            encrypted_filename = filename + ".enc"
+            encrypted_filename = filename
             with open(encrypted_filename, "wb") as file:
                 [file.write(x) for x in (aes.nonce, tag, ciphertext)]
             
@@ -148,7 +148,7 @@ class AES_GUI:
             aes = AES.new(key, AES.MODE_EAX, nonce=nonce)
             plaintext = aes.decrypt_and_verify(ciphertext, tag)
             
-            decrypted_filename = os.path.splitext(filename)[0]
+            decrypted_filename = filename
             with open(decrypted_filename, "wb") as file:
                 file.write(plaintext)
             
