@@ -1,9 +1,5 @@
 import numpy as np
-import secrets
-from PIL import Image
-import os
-from tkinter import filedialog
-import pyperclip
+# from PIL import Image
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -33,12 +29,11 @@ rcon = np.array(
     [0x00, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36]
 )
 
-# Number of rounds
+# AES parameters
 num_rounds = 10
-
-# Block size in bytes
 block_size = 16
 
+# Helper functions for key expansion
 def rotate_word(word):
     return np.roll(word, -1)
 
@@ -61,9 +56,11 @@ def generate_round_keys(key):
         round_keys.append(generate_next_round_key(round_keys[-1], round_const))
     return round_keys
 
+# Add Round Key
 def add_round_key(state, round_key):
     return np.bitwise_xor(state, round_key)
 
+# AES Encryption and Decryption functions
 def encrypt_block(block, key):
     state = np.frombuffer(block, dtype=np.uint8)
     round_keys = generate_round_keys(key)
@@ -98,6 +95,7 @@ def decrypt_block(block, key):
 
     return state.tobytes()
 
+# AES Transformation functions
 def sub_bytes(state):
     return np.array([sbox[b] for b in state], dtype=np.uint8)
 
@@ -143,6 +141,7 @@ def inv_mix_columns(state):
         state_matrix[i][3] = np.uint8(gf_mul(0x0b, s0) ^ gf_mul(0x0d, s1) ^ gf_mul(0x09, s2) ^ gf_mul(0x0e, s3))
     return state_matrix.flatten()
 
+# Galois Field Multiplication
 def gf_mul(x, y):
     r = 0
     for i in range(8):
