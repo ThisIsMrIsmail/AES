@@ -101,7 +101,7 @@ class AES_GUI:
     
     def encrypt_file(self):
         filename = self.file_entry.get()
-        key = get_random_bytes(16)  
+        key = get_random_bytes(16)
         aes = AES.new(key, AES.MODE_EAX)
         
         try:
