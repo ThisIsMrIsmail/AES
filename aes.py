@@ -3,7 +3,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-# AES S-box
+# S-box
 sbox = np.array([
     0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5, 0x30, 0x01, 0x67, 0x2b, 0xfe, 0xd7, 0xab, 0x76,
     0xca, 0x82, 0xc9, 0x7d, 0xfa, 0x59, 0x47, 0xf0, 0xad, 0xd4, 0xa2, 0xaf, 0x9c, 0xa4, 0x72, 0xc0,
@@ -55,6 +55,7 @@ def generate_round_keys(key):
         round_keys.append(generate_next_round_key(round_keys[-1], round_const))
     return round_keys
 
+
 # Add Round Key
 def add_round_key(state, round_key):
     return np.bitwise_xor(state, round_key)
@@ -93,6 +94,7 @@ def decrypt_block(block, key):
     state = add_round_key(state, round_keys[0])
 
     return state.tobytes()
+
 
 # AES Transformation functions
 def sub_bytes(state):
@@ -139,6 +141,7 @@ def inv_mix_columns(state):
         state_matrix[i][2] = np.uint8(gf_mul(0x0d, s0) ^ gf_mul(0x09, s1) ^ gf_mul(0x0e, s2) ^ gf_mul(0x0b, s3))
         state_matrix[i][3] = np.uint8(gf_mul(0x0b, s0) ^ gf_mul(0x0d, s1) ^ gf_mul(0x09, s2) ^ gf_mul(0x0e, s3))
     return state_matrix.flatten()
+
 
 # Galois Field Multiplication
 def gf_mul(x, y):
