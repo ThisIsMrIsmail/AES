@@ -1,0 +1,66 @@
+ISMAIL SHERIF
++201212145841 | ismailsherifwork@gmail.com | Hurghada, Egypt | linkedin.com/in/ThisIsMrIsmail | github.com/ThisIsMrIsmail
+SUMMARY
+A man with a keen interest in artificial intelligence and software development supporting digital Innovation, especially machine learning. He 
+leveraged its core concepts, implemented a few models, and solved classification and regression problems in computer vision and natural 
+language processing. Helping to advance and enhance community solutions using AI.
+SKILLS
+Technical skills: Python, C/C++, TensorFlow, Flask, Scikit-Learn, NumPy, Pandas, OpenCV, Web Scraping, SQL, Git, REST APIs, PowerShell
+Core knowledge: programming fundamentals, object-oriented programming, data structures, algorithms, system design, databases, networks
+Soft skills: leadership, critical thinking, problem solving, communication skills, analytical skills, agile, English (advanced), Germany (beginner)
+PROFESSIONAL EXPERIENCE
+Google Hurghada, Red Sea Governorate, Egypt
+Google DSC MENA '24 Lead August 2023 - Present
+• Leading a Google Developer Student Clubs community of 3k+ members/followers, and a team of 30 tech/non-tech members.
+• Established 7 bootcamps in various tech fields such as: programming, web development, machine learning, cybersecurity, and more.
+• Organized 75+ events and workshops, that benefited 3.2k+ attendees, with top tech speakers and engineers in the tech field.
+Sesame Labs (smsm.ai) Remote
+Machine Learning Engineer Intern March 2024 - May 2024
+• Joined an outstanding team of more than 200 machine learning talents at Sesame Labs in research and development department.
+• Worked on a computer vision project called Eye of Horus, which included many tasks, and my job was to work on the data annotation part.
+Google DSC Hurghada Hurghada, Red Sea Governorate, Egypt
+Machine Learning Instructor (Core Team Member) September 2022 - June 2023
+• Organized workshops and sessions talking about artificial intelligence and machine learning, helping 28+ trainees advance in their careers.
+• Created tasks and assignments for members to let them implement explained topic and measure their progress during the workshop.
+• Gave an in-depth session on deep learning and neural networks especially convolutional neural networks and its applications in real life.
+Information Technology Industry Development Agency, ITIDA Remote
+Artificial Intelligence Engineer Intern July 2023 - July 2023
+• Implement tasks that needed problem solving skills and good experience with python and object-oriented programming.
+• Got deep knowledge in machine and deep learning concepts, such as: cost function, gradient descent, activation function and more.
+• Built my first neural network, a model that classifies dataset into 2 classes, detecting cats and dogs using CNN, with around 96% accuracy.
+• Enhanced and developed the most essential soft skills such as: critical thinking, communication, presentation, and leadership skills.
+PROJECTS & OUTSIDE EXPERIENCE
+Medical Expert System Remote
+Artificial Intelligence Engineer
+• Designed an expert system that detects 10+ medical diseases according to medical experts' domain knowledge base.
+• Implemented a REST API acting as a service to the expert system, increasing system accessibility and efficiency by 50%.
+• Developed a mobile app that users send requests in form of symptoms, responding with matched disease details and treatment.
+• Built this system using technologies: Python, Flask, Pandas, Experta, Dart, Flutter, MySQL, Git.
+• Link to project
+Lung Cancer Detection Remote
+Machine Learning Engineer
+• Developed a convolutional neural network model that classifies patients into 4 classes according to breast CT-scanned images dataset.
+• Enhanced model performance and accuracy through implementation of deep learning optimization methods.
+• Developed a Flask app acting as an intermediate between model and user, enabling patient to upload image and get response in seconds.
+• Built this system using the following technologies: Python, Flask, TensorFlow, Keras, NumPy, Pandas, Git.
+• Link to project
+Triple T Academy Remote
+Full Stack Developer
+• Developed an online courses registration web application that enables users to register and pay for courses online.
+• Designed backend system that handles two portals, admin and user portal, built an authorization service ensures user/admin access level.
+• Enhanced authentication by building • account verification service • new password generation service, increasing system security by 30%.
+• Built this system using the following technologies: PHP, Composer, Git, Apache, MySQL, HTML, CSS, JavaScript 
+• Link to project
+EDUCATION
+South Valley University (Hurghada Branch) October 2021 - July 2025
+Bachelor's, Computer Science GPA: 3.62
+VOLUNTEERING
+• 2024 - Present: Local Lead at Nasa Space Apps, Hurghada
+• 2024 - Present: Machine Learning Contributor at Unify AI, Remote
+• 2024 - Present: Campus Ambassador at GirlScript Summer of Code, Remote
+• 2023 - Present: Full Stack Developer at Arabs in Neuroscience, Remote
+• 2023 - 2023: Event Organizer at Arab Physical Society, Hurghada
+CERTIFICATIONS
+• 1st Place, Global Nominee in Artificial Intelligence (Nasa Space Apps Challenge), 2022
+• Forward Program Completion Certificate (McKinsey), 2023
+• Participation in AI Olympiad '22 Edition Certificate (Helwan University), 2022
